@@ -1,0 +1,92 @@
+.tab {
+    width: 100%;
+    height: 46px;
+    padding: 0 10px 0 20px;
+    display: flex;
+    align-items: center;
+
+    &-dark {
+        color: $dark-active-font;
+        background-color: $dark-tab-background;
+        border: 1px solid $dark-tab-border;
+
+        .checkbox-container {
+            border: 1px solid $dark-checkbox-border;
+
+            &:hover {
+                border: 1px solid $check-background;
+            }
+
+            label {
+                border: 1px solid $dark-checkbox-border;
+            }
+        }
+
+        .completed {
+            color: $dark-completed-font;
+
+            &:hover {
+                color: $dark-completed-font-hover;
+            }
+        }
+    }
+
+    &-light {
+        color: $light-active-font;
+        background-color: $light-tab-background;
+        border: 1px solid $light-tab-border;
+
+        .checkbox-container {
+            border: 1px solid $dark-checkbox-border;
+
+            &:hover {
+                border: 1px solid $check-background;
+            }
+
+            label {
+                border: 1px solid $light-checkbox-border;
+            }
+        }
+
+        .completed {
+            color: $light-completed-font;
+
+            &:hover {
+                color: $light-completed-font-hover;
+            }
+        }
+    }
+
+    .checkbox-container {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    input[type='text'] {
+        display: inline-block;
+    }
+
+    .name-container {
+        height: 20px;
+        margin: 0 12px;
+        display: inline-block;
+        overflow: hidden;
+
+        &.completed {
+            text-decoration: line-through;
+        }
+    }
+
+    .delete-btn {
+        width: 12px;
+        height: 12px;
+        margin-left: auto;
+        display: inline-block;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

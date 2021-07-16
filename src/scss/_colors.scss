@@ -1,0 +1,34 @@
+// ### dark theme
+
+$dark-header-font: hsl(300, 100%, 100%);
+$dark-app-background: hsl(235, 21%, 11%);
+$dark-tab-background: hsl(235, 24%, 19%);
+$dark-active-font: hsl(236, 29%, 82%);
+$dark-active-font-hover: hsl(236, 40%, 87%);
+$dark-completed-font: hsl(234, 13%, 47%);
+$dark-completed-font-hover: hsl(235, 10%, 47%);
+$dark-typing-font: hsl(235, 31%, 85%);
+$dark-tab-border: hsl(235, 17%, 26%);
+$dark-checkbox-border: hsl(236, 17%, 31%);
+
+// ## light theme
+
+$light-header-font: hsl(0, 0%, 100%);
+$light-app-background: hsl(0, 0%, 98%);
+$light-tab-background: hsl(0, 0%, 100%);
+$light-active-font: hsl(232, 8%, 37%);
+$light-active-font-hover: hsl(243, 9%, 38%);
+$light-completed-font: hsl(252, 4%, 72%);
+$light-completed-font-hover: hsl(230, 5%, 76%);
+$light-typing-font: hsl(250, 7%, 17%);
+$light-tab-border: hsl(252, 11%, 91%);
+$light-checkbox-border: hsl(240, 3%, 85%);
+
+// ### Primary
+
+$bright-blue: hsl(220, 98%, 61%);
+$check-background: linear-gradient(
+    to right,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+);

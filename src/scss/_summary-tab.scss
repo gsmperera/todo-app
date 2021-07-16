@@ -1,0 +1,35 @@
+#summary-tab {
+    display: flex;
+    align-items: center;
+
+    &.tab-dark {
+        .item-count {
+            color: $dark-completed-font;
+        }
+        button {
+            margin-left: auto;
+            color: $dark-completed-font;
+            background-color: $dark-tab-background;
+            border: 1px solid transparent;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &.tab-light {
+        .item-count {
+            color: $light-completed-font;
+        }
+        button {
+            margin-left: auto;
+            color: $light-completed-font;
+            background-color: $light-tab-background;
+            border: 1px solid transparent;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.todo-item {
+    label {
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .checkbox-container {
+        border: none;
+
+        label {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .checkmark {
+                display: none;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            input {
+                display: none;
+
+                &:checked + .checkmark {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $check-background;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+#new-item {
+    margin-bottom: 16px;
+    border-radius: 5px;
+
+    &.tab-dark {
+        .checkbox-container {
+            margin-right: 12px;
+            border: 1px solid $dark-checkbox-border;
+        }
+
+        input {
+            width: 100%;
+            color: $dark-typing-font;
+            background-color: $dark-tab-background;
+            outline: none;
+            border: none;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+    &.tab-light {
+        .checkbox-container {
+            margin-right: 12px;
+            border: 1px solid $light-checkbox-border;
+        }
+
+        input {
+            width: 100%;
+            color: $light-typing-font;
+            background-color: $light-tab-background;
+            outline: none;
+            border: none;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+}

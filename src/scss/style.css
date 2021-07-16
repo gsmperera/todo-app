@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+}
+
+#root {
+  width: 100%;
+}
+
+#app-container {
+  min-height: 100vh;
+}
+
+#app-container.dark {
+  background-color: #161722;
+}
+
+#app-container.light {
+  background-color: #fafafa;
+}
+
+#cover-img {
+  width: 100%;
+  height: 53.33vw;
+  border-top: 1px solid transparent;
+  background-size: cover;
+}
+
+@media screen and (min-width: 400px) {
+  #cover-img {
+    height: 215px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #cover-img {
+    height: 25vh;
+  }
+}
+
+#cover-img.dark {
+  background-image: url(../images/bg-mobile-dark.jpg);
+}
+
+@media screen and (min-width: 400px) {
+  #cover-img.dark {
+    background-image: url(../images/bg-desktop-dark.jpg);
+  }
+}
+
+#cover-img.light {
+  background-image: url(../images/bg-mobile-light.jpg);
+}
+
+@media screen and (min-width: 400px) {
+  #cover-img.light {
+    background-image: url(../images/bg-desktop-light.jpg);
+  }
+}
+
+#header {
+  width: 100vw;
+  padding: 12.8vw 25px 0;
+  background-size: cover;
+}
+
+@media screen and (min-width: 400px) {
+  #header {
+    max-width: 540px;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #header {
+    padding-top: 10vh;
+  }
+}
+
+#header.dark h1 {
+  color: white;
+}
+
+#header.light h1 {
+  color: white;
+}
+
+#header h1 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 24px;
+  letter-spacing: 10px;
+}
+
+#header .mode-toggle-btn-container {
+  width: 24px;
+  float: right;
+  cursor: pointer;
+}
+
+#todo-container {
+  width: 100%;
+  padding: 0 25px;
+  margin-top: -20vw;
+}
+
+@media screen and (min-width: 400px) {
+  #todo-container {
+    max-width: 540px;
+    margin: -100px auto 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #todo-container {
+    max-width: 540px;
+    margin: -10vh auto 0;
+  }
+}
+
+.tab {
+  width: 100%;
+  height: 46px;
+  padding: 0 10px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab-dark {
+  color: #c4c6de;
+  background-color: #25273c;
+  border: 1px solid #37394e;
+}
+
+.tab-dark .checkbox-container {
+  border: 1px solid #42435c;
+}
+
+.tab-dark .checkbox-container:hover {
+  border: 1px solid linear-gradient(to right, #57ddff, #c058f3);
+}
+
+.tab-dark .checkbox-container label {
+  border: 1px solid #42435c;
+}
+
+.tab-dark .completed {
+  color: #686b87;
+}
+
+.tab-dark .completed:hover {
+  color: #6c6e84;
+}
+
+.tab-light {
+  color: #575966;
+  background-color: white;
+  border: 1px solid #e7e6eb;
+}
+
+.tab-light .checkbox-container {
+  border: 1px solid #42435c;
+}
+
+.tab-light .checkbox-container:hover {
+  border: 1px solid linear-gradient(to right, #57ddff, #c058f3);
+}
+
+.tab-light .checkbox-container label {
+  border: 1px solid #d8d8da;
+}
+
+.tab-light .completed {
+  color: #b6b5ba;
+}
+
+.tab-light .completed:hover {
+  color: #bfc0c5;
+}
+
+.tab .checkbox-container {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tab input[type='text'] {
+  display: inline-block;
+}
+
+.tab .name-container {
+  height: 20px;
+  margin: 0 12px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.tab .name-container.completed {
+  text-decoration: line-through;
+}
+
+.tab .delete-btn {
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+  display: inline-block;
+}
+
+.tab .delete-btn:hover {
+  cursor: pointer;
+}
+
+#new-item {
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+#new-item.tab-dark .checkbox-container {
+  margin-right: 12px;
+  border: 1px solid #42435c;
+}
+
+#new-item.tab-dark input {
+  width: 100%;
+  color: #cdcfe5;
+  background-color: #25273c;
+  outline: none;
+  border: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#new-item.tab-light .checkbox-container {
+  margin-right: 12px;
+  border: 1px solid #d8d8da;
+}
+
+#new-item.tab-light input {
+  width: 100%;
+  color: #29282e;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#sort-tab {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+
+#sort-tab input[type='radio'] {
+  display: none;
+}
+
+#sort-tab input[type='radio']:checked + label {
+  color: #3a7bfd;
+}
+
+#sort-tab label {
+  margin: 0 10px;
+}
+
+#sort-tab label:hover {
+  cursor: pointer;
+}
+
+#summary-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#summary-tab.tab-dark .item-count {
+  color: #686b87;
+}
+
+#summary-tab.tab-dark button {
+  margin-left: auto;
+  color: #686b87;
+  background-color: #25273c;
+  border: 1px solid transparent;
+}
+
+#summary-tab.tab-dark button:hover {
+  cursor: pointer;
+}
+
+#summary-tab.tab-light .item-count {
+  color: #b6b5ba;
+}
+
+#summary-tab.tab-light button {
+  margin-left: auto;
+  color: #b6b5ba;
+  background-color: white;
+  border: 1px solid transparent;
+}
+
+#summary-tab.tab-light button:hover {
+  cursor: pointer;
+}
+
+.todo-item label {
+  width: 100%;
+}
+
+.todo-item label:hover {
+  cursor: pointer;
+}
+
+.todo-item .checkbox-container {
+  border: none;
+}
+
+.todo-item .checkbox-container label {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.todo-item .checkbox-container label:hover {
+  cursor: pointer;
+}
+
+.todo-item .checkbox-container label .checkmark {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.todo-item .checkbox-container label input {
+  display: none;
+}
+
+.todo-item .checkbox-container label input:checked + .checkmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#57ddff), to(#c058f3));
+  background: linear-gradient(to right, #57ddff, #c058f3);
+}
+/*# sourceMappingURL=style.css.map */
